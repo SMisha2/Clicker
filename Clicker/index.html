@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title id="title">Кликер</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+</head>
+<body>
+
+  <h1>Кликни как можно больше за <span id="time">10</span><span id="seconds"> секунд</span></h1>
+  <button id="clickbtn" class="clickbtn" disabled>Клик</button>
+
+  <div class="info">
+    <p class="classic">Количество кликов: <span id="count">0</span></p> 
+    <p class="classic">Клики в секунду: <span id="cps">0</span></p>
+    <br>
+    <br>
+    <p class="best" id="beast">Лучший результат: <span id="best_score">0</span></p>
+    <p class="best" id="shakeText">Лучший CPS: <span id="best_cps">0</span></p>
+    <br>
+  </div>
+
+  <button onclick="nPlus()" id="nP2" class="nP2">+1</button>
+  <button onclick="nMinus()" id="nM2" class="nM2">-1</button>
+
+  <br>
+  <br>
+
+  <button id="startBtn" onclick="StartGame()" class="startGame1">Начать</button>
+
+</body>
+</html>

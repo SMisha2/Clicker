@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: #f0f8ff;
+    background-image: url("./11012874.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 40px;
+    animation-name: titlee;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes titlee {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.clickbtn:disabled {
+    background-color: darkgrey;
+    cursor: not-allowed;
+}
+
+.clickbtn {
+    padding: 20px 40px;
+    font-size: 35px;
+    background-color: rgb(86, 45, 90);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.startGame1, .startGame2 {
+    padding: 20px 40px;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(112, 85, 209);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.startGame1:hover, .startGame2:hover {
+    background-color: rgba(42, 55, 129, 0.596);
+    color: rgb(129, 219, 255);
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.nM2, .nP2 {
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(49, 48, 48);
+    color: rgb(108, 189, 255);
+}
+
+.nM2:hover, .nP2:hover {
+    font-size: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(101, 100, 100);
+    color: rgb(171, 227, 236);
+}
+
+.nM2:disabled, .nP2:disabled {
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(71, 71, 71);
+    cursor: not-allowed;
+}
+
+.classic {
+    color: wheat;
+    display: block; /* Изменено на block, чтобы строки не слипались вместе */
+    margin: 10px 0;
+}
+
+.best1 {
+    animation: Gradient1 1s infinite;
+    display: inline-block;
+}
+
+@keyframes Gradient1 {
+    0% { color: red; }
+    16.6% { color: orange; }
+    33.2% { color: yellow; }
+    48.8% { color: green; }
+    65.4% { color: cyan; }
+    82% { color: blue; }
+    98.6% { color: blueviolet; }
+    100% { color: red; }
+}
+
+.best2 {
+    animation: Gradient2 0.8s infinite;
+    display: inline-block;
+}
+
+@keyframes Gradient2 {
+    0% { color: red; }
+    16.6% { color: orange; }
+    33.2% { color: yellow; }
+    48.8% { color: green; }
+    65.4% { color: cyan; }
+    82% { color: blue; }
+    98.6% { color: blueviolet; }
+    100% { color: red; }
+}
+
+.shaking1 {
+    animation: shake1 1s infinite;
+    display: inline-block;
+}
+
+@keyframes shake1 {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shaking2 {
+    animation: shake2 0.5s infinite;
+    display: inline-block;
+}
+
+@keyframes shake2 {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.click {
+    animation: clicking 50ms 1;
+    display: inline-block;
+}
+
+@keyframes clicking {
+    0% {
+        background-color: rgba(42, 55, 129, 0.596);
+        color: rgb(129, 219, 255);
+    }
+    100% {
+        color: rgb(58, 52, 52);
+        background-color: rgb(238, 153, 153);
+    }
+}
+
+.red1 {
+    animation: redding1 1s 1;
+    display: inline-block;
+}
+
+@keyframes redding1 {
+    0% { color: lightsalmon; }
+    100% { color: red; }
+}
+
+.red2 {
+    animation: redding2 1s 1;
+    display: inline-block;
+}
+
+@keyframes redding2 {
+    0% { color: lightsalmon; }
+    100% { color: red; }
+}
+    
